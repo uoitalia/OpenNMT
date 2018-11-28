@@ -4,12 +4,26 @@
 
 ### New features
 
+### Fixes and improvements
+
+## [v0.10.1](https://github.com/OpenNMT/OpenNMT/releases/tag/v0.10.1) (2018-07-18)
+
+### Fixes and improvements
+
+* Fix error when starting seq2seq training
+
+## [v0.10.0](https://github.com/OpenNMT/OpenNMT/releases/tag/v0.10.0) (2018-07-18)
+
+### New features
+
 * Introduce hook mechanism for additional customization of workflows
 * Sentence-level negative log-likelihood criterion for sequence tagging
 * '-' stands for stdin for inference tools (translate, lm, tag)
 * Optional source features per request (for domain control) with rest translation server
 * Display oov rate (source/target) in translate
+* Introduce `max_tokens` allowing longer sentence handling and larger batch size
 * Add `-log_tag` option to add tag in logs for better automatic processing
+* The `withAttn` option in rest translation server now also returns the source and target tokens
 
 ### Fixes and improvements
 
@@ -20,7 +34,9 @@
 * Fix language model sampling mode
 * Fix retraining from a language model
 * Fix `-update_vocab` option for language models
+* Fix error when using translation-based validation metrics
 * Correct error handling for all file open commands
+* Reduce the Docker image size
 
 ## [v0.9.7](https://github.com/OpenNMT/OpenNMT/releases/tag/v0.9.7) (2017-12-19)
 
